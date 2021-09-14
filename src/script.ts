@@ -6,8 +6,11 @@
 
         const secretNumber: number = generateSecretNumber();
         const userNumber: number = parseInt((<HTMLInputElement>document.getElementById('guess')).value);
+        // document.getElementById('guess') as HTMLInputElement;
 
-        if (secretNumber == userNumber) {
+        // const userGuess = userNumber.value as Number | String;
+
+        if (secretNumber == userNumber) { //userGuess
             alert("Awesome! You number " + userNumber + " was correct. You can be named many things, hungry not being one of them.");
         } else {
             alert("Bummer... You guessed " + userNumber + " and the secret number was " + secretNumber + ".");
